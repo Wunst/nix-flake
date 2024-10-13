@@ -5,6 +5,8 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ../../modules/dev
+    ../../modules/graphical
   ];
 
   boot.initrd.luks.devices.root = {

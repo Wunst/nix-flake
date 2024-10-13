@@ -13,6 +13,10 @@
   user = {
     username = "ben"; # Your username.
     description = "Ben"; # Your human-readable name.
+    git = {
+      name = "Wunst";
+      email = "matthiesbe@gmail.com";
+    };
     shell = "zsh";
   };
 }
