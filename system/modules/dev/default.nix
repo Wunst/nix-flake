@@ -21,5 +21,7 @@
     userName = name;
     userEmail = email;
   };
+
+  hm.programs.gh.enable = true;
 }
 
