@@ -16,12 +16,12 @@
     programs.${shell}.enable = true;
 
     users.users.${username} = {
-      inherit description;
+      inherit description home;
       isNormalUser = true;
       shell = pkgs.${shell};
       extraGroups = [
         "wheel"
-          "networkmanager"
+        "networkmanager"
       ];
     };
 

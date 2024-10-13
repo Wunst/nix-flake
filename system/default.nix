@@ -7,6 +7,7 @@
 {
   imports = [
     ./hardware/${hostName}
+    ./allow-unfree.nix
     ./localization.nix
     ./users.nix
   ];
