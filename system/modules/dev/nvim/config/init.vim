@@ -1,3 +1,8 @@
+let g:mapleader=" "
+let g:maplocalleader="+"
+
+lua require("config.lazy")
+
 set nu
 set rnu
 

@@ -3,6 +3,12 @@
   pkgs,
   ... }:
 {
+  environment.systemPackages = with pkgs; [
+    xsel
+    fd
+    ripgrep
+  ];
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
