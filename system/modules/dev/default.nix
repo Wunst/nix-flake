@@ -4,18 +4,12 @@
   settings,
   ... }:
 {
-  programs.neovim.enable = true;
+  imports = [
+    ./nvim
+  ];
 
   programs.git.enable = true;
 
-  environment.variables = {
-    EDITOR = "nvim";
-  };
-
-  hm.home.shellAliases = {
-    v = "nvim";
-  };
-  
   hm.programs.git = with settings.user.git; {
     enable = true;
     userName = name;
