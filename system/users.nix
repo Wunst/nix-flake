@@ -3,24 +3,34 @@
   pkgs,
   settings,
   ... }:
-with settings.user; {
-  programs.${shell}.enable = true;
-
-  users.users.${username} = {
-    inherit description;
-    isNormalUser = true;
-    shell = pkgs.${shell};
-    extraGroups = [
-      "wheel"
-      "networkmanager"
-    ];
+{
+  options = with lib; with types; {
+    hm = mkOption {
+      type = attrsOf anything;
+      default = {};
+      description = "Options to be passed along to home-manager";
+    };
   };
 
-  home-manager.useGlobalPkgs = true;
-
-  home-manager.users.${username} = {
+  config = with settings.user; {
     programs.${shell}.enable = true;
-    home.stateVersion = "24.05";
+
+    users.users.${username} = {
+      inherit description;
+      isNormalUser = true;
+      shell = pkgs.${shell};
+      extraGroups = [
+        "wheel"
+          "networkmanager"
+      ];
+    };
+
+    home-manager.useGlobalPkgs = true;
+
+    home-manager.users.${username} = lib.recursiveUpdate {
+      programs.${shell}.enable = true;
+      home.stateVersion = "24.05";
+    } config.hm;
   };
 }
 
