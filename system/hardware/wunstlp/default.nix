@@ -7,6 +7,7 @@
     ./hardware-configuration.nix
     ../../modules/dev
     ../../modules/graphical
+    ../../modules/virtualization.nix
   ];
 
   boot.initrd.luks.devices.root = {
