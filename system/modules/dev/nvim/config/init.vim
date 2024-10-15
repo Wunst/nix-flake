@@ -12,7 +12,7 @@ set sw=2
 set expandtab
 set smartindent
 
-set clipboard="unnamedplus"
+set clipboard=unnamedplus
 
 set nobackup
 set nowritebackup
