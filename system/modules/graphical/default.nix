@@ -26,6 +26,7 @@
     thunderbird
     keepassxc
     synology-drive-client
+    libreoffice
   ];
 }
 
