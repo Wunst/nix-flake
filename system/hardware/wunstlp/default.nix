@@ -8,6 +8,7 @@
     ../../modules/dev
     ../../modules/graphical
     ../../modules/virtualization.nix
+    ../../modules/printing.nix
   ];
 
   boot.initrd.luks.devices.root = {
