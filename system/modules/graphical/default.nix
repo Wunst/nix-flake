@@ -4,6 +4,7 @@
   ... }:
 {
   imports = [
+    ./fonts.nix
     ./xdg-dirs.nix
   ];
 

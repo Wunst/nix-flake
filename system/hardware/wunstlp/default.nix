@@ -7,6 +7,7 @@
     ./hardware-configuration.nix
     ../../modules/dev
     ../../modules/graphical
+    ../../modules/terminal
     ../../modules/virtualization.nix
     ../../modules/printing.nix
   ];

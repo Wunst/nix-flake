@@ -21,6 +21,16 @@
     shell = "zsh";
   };
 
+  theming = {
+    prompt = "philips"; # For oh-my-zsh.
+  };
+
+  keyMode = "vi";
+
+  shortcuts = {
+    tmux = "a";
+  };
+
   desktop = {
     userDirs = {
       createDirectories = false; # I use SynologyDrive on my home.
