@@ -18,11 +18,6 @@
   ];
 
   boot = {
-    plymouth = {
-      enable = true;
-      theme = "breeze";
-    };
-
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
