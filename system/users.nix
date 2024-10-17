@@ -22,6 +22,7 @@
       extraGroups = [
         "wheel"
         "networkmanager"
+        "libvirtd"
       ];
       openssh.authorizedKeys.keys = sshAuthorizedKeys;
     };
