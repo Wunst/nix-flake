@@ -6,6 +6,7 @@
 {
   imports = [
     ./nvim
+    ./processing.nix
   ];
 
   programs.git.enable = true;
