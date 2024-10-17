@@ -23,6 +23,7 @@
         "wheel"
         "networkmanager"
       ];
+      openssh.authorizedKeys.keys = sshAuthorizedKeys;
     };
 
     home-manager.useGlobalPkgs = true;
