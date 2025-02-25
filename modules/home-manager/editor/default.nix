@@ -1,0 +1,7 @@
+{ ... }: {
+  imports = [
+    # Fallback.
+    ./vim.nix
+  ];
+}
+
