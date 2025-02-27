@@ -3,6 +3,8 @@
     ./desktop
     ./editor
     ./shell
+
+    ./direnv.nix
     ./git.nix
     ./tmux.nix
   ];
