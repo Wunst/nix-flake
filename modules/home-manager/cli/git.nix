@@ -14,5 +14,17 @@
     # Fancy diff view.
     delta.enable = true;
   };
+
+  programs.gh = {
+    enable = true;
+
+    settings = {
+      aliases = {
+        clone = "repo clone";
+        co = "pr checkout";
+        re = "release create";
+      };
+    };
+  };
 }
 
