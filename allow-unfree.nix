@@ -3,6 +3,8 @@
     "nvidia-x11"
     "nvidia-settings"
     "discord"
+    "steam"
+    "steam-unwrapped"
   ];
 }
 
