@@ -12,6 +12,8 @@
     "/nix".options = [ "compress=zstd" "noatime" ];
   };
 
+  zramSwap.enable = true;
+
   services.btrfs.autoScrub.enable = true;
 
   # Use proprietary nvidia drivers.
