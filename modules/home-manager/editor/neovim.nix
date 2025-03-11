@@ -55,6 +55,8 @@ in {
               extensions = {
                 file_browser = {
                   hijack_netrw = true,
+                  path = "%:p:h",
+                  select_buffer = true,
                 },
               },
             }
@@ -78,6 +80,8 @@ in {
             lspconfig.clangd.setup{}
             lspconfig.ts_ls.setup{}
             lspconfig.rust_analyzer.setup{}
+
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition)
           EOF
         ''; }
 
@@ -116,6 +120,16 @@ in {
               }, {
                 { name = "buffer" }
               }),
+            }
+          EOF
+        ''; }
+
+      { plugin = lsp_lines-nvim;
+        config = ''
+          lua << EOF
+            require("lsp_lines").setup()
+            vim.diagnostic.config{
+              virtual_text = false,
             }
           EOF
         ''; }
