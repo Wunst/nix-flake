@@ -2,6 +2,7 @@
   imports = [
     ./cli
     ./gui
+    ./development
     ./editor
     ./shell
   ];
