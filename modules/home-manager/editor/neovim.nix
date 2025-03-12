@@ -81,6 +81,8 @@ in {
             lspconfig.ts_ls.setup{}
             lspconfig.rust_analyzer.setup{}
 
+            lspconfig.gdscript.setup{}
+
             vim.keymap.set("n", "gd", vim.lsp.buf.definition)
           EOF
         ''; }
