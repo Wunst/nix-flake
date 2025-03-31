@@ -15,6 +15,9 @@
   # `btrfs` cleanup serivce.
   services.btrfs.autoScrub.enable = true;
 
+  # Modules.
+  wunst.modules.wireguard-client.enable = true;
+
   system.stateVersion = "24.11";
 }
 
