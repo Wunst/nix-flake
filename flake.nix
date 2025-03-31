@@ -22,6 +22,7 @@
       };
     in {
       wunstpc = mkSystem "x86_64-linux" "wunstpc";
+      wunstlp = mkSystem "x86_64-linux" "wunstlp";
     };
   };
 }
