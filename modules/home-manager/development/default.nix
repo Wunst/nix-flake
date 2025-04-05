@@ -2,6 +2,7 @@
   home.packages =
     with pkgs; [
       virt-manager
+      virt-viewer
       filezilla
 
       httpie
@@ -16,7 +17,7 @@
       typescript-language-server
 
       # Embedded dev.
-      arduino
+      arduino-ide
       arduino-cli
       minicom
 
