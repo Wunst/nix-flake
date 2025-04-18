@@ -13,6 +13,8 @@
       blender
       discord
       spotify
+      vlc
+      ffmpeg-full
     ];
 
   programs.kitty = {
