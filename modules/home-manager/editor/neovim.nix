@@ -46,12 +46,21 @@
           config = ''
             lua << EOF
               require("telescope").setup{
+                pickers = {
+                  find_files = {
+                    hidden = true,
+                    file_ignore_patterns = {
+                      ".git"
+                    },
+                  },
+                },
                 extensions = {
                   file_browser = {
                     hijack_netrw = true,
                     path = "%:p:h",
                     select_buffer = true,
                     grouped = true,
+                    hidden = { file_browser = true },
                   },
                   ["ui-select"] = require("telescope.themes").get_cursor{}
                 },
@@ -161,6 +170,13 @@
               vim.diagnostic.config{
                 virtual_text = false,
               }
+            EOF
+          ''; }
+
+        { plugin = render-markdown-nvim;
+          config = ''
+            lua << EOF
+              require("render-markdown").setup{}
             EOF
           ''; }
       ];
