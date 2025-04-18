@@ -7,6 +7,9 @@
     ];
   };
 
-  services.avahi.enable = true; # Discover network printers.
+  services.avahi = {
+    enable = true; # Discover network printers.
+    nssmdns4 = true;
+  };
 }
 
